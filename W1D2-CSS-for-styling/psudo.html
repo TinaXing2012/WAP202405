@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr td {
+            border: 1px solid red;
+        }
+
+        tr:hover {
+            background-color: gray;
+        }
+
+        h2::before {
+            content: 'Chapter ';
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #00FF00;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #FF00FF;
+        }
+
+        /* click on a link */
+        a:active {
+            color: #0000FF;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.miu.edu">Maharishi I U</a>
+    <h2>1</h2>
+    <p>The Cascading in CSS indicates that there are multiple
+        levels of style sheets. More specific styles overwrite more
+        general styles. We can be more specific by using Class
+        selectors (can apply to multiple elements) and even more
+        so with id selectors (individual elements) and context
+        selectors.</p>
+    <hr>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
