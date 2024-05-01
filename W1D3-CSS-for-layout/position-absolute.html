@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            border: 1px solid blue;
+            margin-bottom: 10px;
+        }
+
+        span {
+            border: 1px solid red;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #ancester1 {
+            /* position: relative; */
+            border: 1px solid purple;
+        }
+
+        #ancester2 {
+            /* position: relative; */
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Elements that are positioned relatively in the normal flow of elements in the document This is a spanElements
+        that are positioned relatively are still considered to be in the normal flow of elements in the document</div>
+    <div>Elements that are positioned relatively in the normal flow of elements in the document This is a spanElements
+        that are positioned relatively are still considered to be in the normal flow of elements in the document</div>
+    <div id="ancester1">
+        some text some text some text some text some text some text some text some text some text some text
+        <div id="ancester2">
+            Elements that are positioned relatively in the normal flow of elements in the document
+            <span>This is a span</span>
+            Elements that are positioned relatively are still considered to be in the normal flow of elements in the
+            document
+        </div>
+    </div>
+</body>
+
+</html>
