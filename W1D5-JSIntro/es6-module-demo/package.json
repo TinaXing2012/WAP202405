@@ -1,0 +1,7 @@
+{
+    "name": "locator",
+    "version": "1.0.0",
+    "description": "Finds the country of origin of the incoming request",
+    "main": "index.js",
+    "type": "module"
+}
