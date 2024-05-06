@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="end">End</button>
+    <script>
+        let timerId;
+        document.getElementById('start').onclick = function() {
+            timerId = setTimeout(()=> console.log('clicked'), 3000);
+            console.log(timerId);
+        }
+
+        document.getElementById('end').onclick = function(){
+            clearTimeout(timerId);
+        }
+    </script>
+</body>
+</html>

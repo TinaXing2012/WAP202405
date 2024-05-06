@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="end">End</button>
+    <script>
+        // const foo = (x, y) => console.log(x, y);
+        //  setInterval(foo, 1000, 'hi', 'hello');
+        let counter = 0;
+        let timerId;
+        document.getElementById('start').onclick = function() {
+            timerId = setInterval(()=> {++counter; console.log(counter);}, 1000);
+            // console.log(timerId);
+        }
+
+        document.getElementById('end').onclick = function(){
+            clearInterval(timerId);
+        }
+    </script>
+    
+</body>
+</html>
