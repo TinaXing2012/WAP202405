@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function User(firstname, lastname) {
+            fname = firstname;
+            lname = lastname;
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+        User.prototype.setFirstName = function (firstname) {
+
+            this.firstname = firstname;
+
+        }
+
+        const john = new User('John', 'Smith');
+
+        john.setFirstName('Edward');
+
+        john.firstname = 'Johnson';
+
+        john.setLastname = function (lastname) {
+
+            this.lastname = lastname;
+
+        }
+
+        john.setLastname('Smithon'); 
+    </script>
+</body>
+
+</html>
