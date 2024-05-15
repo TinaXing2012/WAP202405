@@ -1,0 +1,9 @@
+{
+  "name": "myfirstexpress",
+  "scripts": {
+    "start": "set PORT=9999 && nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
