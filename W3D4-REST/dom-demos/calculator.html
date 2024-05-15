@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            document.getElementById('sum').onclick = function (e) {
+                e.preventDefault();
+                const sum = parseInt(document.getElementById('num1').value) +
+                    parseInt(document.getElementById('num2').value)
+                document.getElementById('num3').value = sum;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input id="num1" type="number" name="num1"> +
+        <input id="num2" type="number" name="num2"> =
+        <input id="num3" type="number">
+        <br />
+        <button id="sum">Sum</button>
+    </form>
+</body>
+
+</html>

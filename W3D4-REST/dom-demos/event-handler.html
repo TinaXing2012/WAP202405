@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.onload = function () {
+            const btn1 = document.getElementById('btn1');
+            btn1.onclick = function () {
+                console.log('Btn 1 clicked');
+            }
+            btn1.onclick = function () {
+                console.log('Btn 1 clicked again.....');
+            }
+
+            const btn2 = document.getElementById('btn2');
+            btn2.addEventListener('click', function () {
+                console.log('Btn 2 clicked');
+            });
+            btn2.addEventListener('click', function () {
+                console.log('Btn 2 clicked again.....');
+            });
+        }
+
+    </script>
+
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+
+</body>
+
+</html>

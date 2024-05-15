@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mypet {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="pet" src="./cat.jpg" alt="Cat" class="mypet">
+    <div>1</div>
+    <div>2</div>
+    <div class="mypet">3</div>
+    <script>
+        const imgDom = document.getElementById('pet');
+        console.log(typeof imgDom);
+        console.log(imgDom.tagName, imgDom.src, imgDom.alt,  imgDom.className);
+
+        const divDoms = document.getElementsByTagName("div");
+        console.log(divDoms);
+        console.log(document.getElementsByClassName('mypet'));
+
+        console.log(document.getElementById('hellowrold'));
+        const imgDom2 = document.querySelector('.mypet');
+        console.log(imgDom2.src, imgDom2.alt);
+        console.log(document.querySelectorAll('.mypet'));
+    </script>
+</body>
+
+</html>
